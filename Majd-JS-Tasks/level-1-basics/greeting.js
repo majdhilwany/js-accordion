@@ -1,0 +1,1 @@
+$('#go').onclick=function(){var n=$('#name').value.trim();if(!n)return show('#out','Please enter your name.',false);var h=new Date().getHours();var g=h<12?'Good morning':h<18?'Good afternoon':'Good evening';show('#out',g+', '+n+'! 👋');};

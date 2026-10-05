@@ -1,0 +1,2 @@
+$('#go').onclick=function(){var s=$('#s').value;var c=s.toLowerCase().replace(/[^a-z0-9\u0600-\u06ff]/g,'');if(!c)return show('#out','Enter some text.',false);
+var ok=c===c.split('').reverse().join('');show('#out','"'+s+'" is '+(ok?'':'NOT ')+'a palindrome.',ok);};

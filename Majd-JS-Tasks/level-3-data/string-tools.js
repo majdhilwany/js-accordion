@@ -1,0 +1,2 @@
+$('#go').onclick=function(){var t=$('#t').value;var w=t.trim().split(/\s+/).filter(Boolean);if(!w.length)return show('#out','Enter some text.',false);
+show('#out','Words: '+w.length+'\nCharacters: '+t.length+'\nVowels: '+(t.match(/[aeiou]/gi)||[]).length+'\nReversed: '+t.split('').reverse().join('')+'\nCapitalized: '+w.map(function(x){return x[0].toUpperCase()+x.slice(1).toLowerCase();}).join(' '));};

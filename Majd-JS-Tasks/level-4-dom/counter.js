@@ -1,0 +1,2 @@
+var c=0;function r(){$('#val').textContent=c;$('#val').style.color=c>0?'#059669':c<0?'#dc2626':'#0f172a';}
+$('#inc').onclick=function(){c++;r();};$('#dec').onclick=function(){c--;r();};$('#rst').onclick=function(){c=0;r();};

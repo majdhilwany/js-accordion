@@ -1,0 +1,2 @@
+$('#go').onclick=function(){var v=parseFloat($('#v').value),m=$('#m').value;if(isNaN(v))return show('#out','Enter a number.',false);
+var r=m==='cf'?v*9/5+32:(v-32)*5/9;show('#out',m==='cf'?v+'°C = '+r.toFixed(2)+'°F':v+'°F = '+r.toFixed(2)+'°C');};

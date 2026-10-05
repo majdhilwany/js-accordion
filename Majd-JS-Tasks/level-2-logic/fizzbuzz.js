@@ -1,0 +1,2 @@
+$('#go').onclick=function(){var n=parseInt($('#n').value,10);if(!(n>=1&&n<=200))return show('#out','Enter a number from 1 to 200.',false);
+var r=[];for(var i=1;i<=n;i++){r.push(i%15===0?'FizzBuzz':i%3===0?'Fizz':i%5===0?'Buzz':i);}show('#out',r.join(', '));};

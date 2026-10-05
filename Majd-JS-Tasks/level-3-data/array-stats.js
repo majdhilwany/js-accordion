@@ -1,0 +1,3 @@
+$('#go').onclick=function(){var a=$('#nums').value.split(',').map(function(x){return x.trim();}).filter(Boolean).map(Number);
+if(!a.length||a.some(isNaN))return show('#out','Enter valid numbers separated by commas.',false);
+var s=a.reduce(function(x,y){return x+y;},0);show('#out','Count: '+a.length+'\nSum: '+s+'\nAverage: '+(s/a.length).toFixed(2)+'\nMin: '+Math.min.apply(null,a)+'\nMax: '+Math.max.apply(null,a)+'\nSorted: '+a.slice().sort(function(x,y){return x-y;}).join(', '));};
